@@ -1,4 +1,5 @@
 // import { CheckCircleIcon } from '@heroicons/reasct/solid';
+import { ArrowCircleRightIcon } from '@heroicons/react/solid';
 import React from 'react';
 import Benefits from '../Benefits/Benefits';
 
@@ -18,6 +19,11 @@ const PricingOption = (props) => {
             {
                 benefits.map(benefit => <Benefits benefit={benefit}></Benefits>)
             }
+
+
+            {/* button */}
+
+            <button className='flex items-center bg-green-500 justify-center w-full mt-4 p-5 font-bold text-2xl rounded-lg'>Buy Now <ArrowCircleRightIcon className='w-5 h-5 ml-1 '></ArrowCircleRightIcon></button>
 
 
 
